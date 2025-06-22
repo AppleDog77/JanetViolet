@@ -11,4 +11,4 @@ Uses Annette and Bobette Freeshell by Kipali (https://ako-kipali.tumblr.com/ghos
 Uses In the Meadow Balloon by Zichqec (https://ukagaka.zichqec.com/balloon/in_the_meadow)
 --
 Updates:
-Released on Sat, Jun 21, 2025.
+Released on Sun, Jun 22, 2025.
