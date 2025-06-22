@@ -1,0 +1,36 @@
+OnAiTalk
+{
+	if CHAIN.IDName != ""
+	{
+		LastTalk = ChainTalk
+	}
+	else
+	{
+		LastTalk = RandomTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+	"\0\s[6]Maybe the sunflowers need more sun? There's quite a lot of trees around... \s[0]But that shouldn't be too much of a problem for the sunflowers..."
+	"\0\s[3]Bluebell's always up to something. I recently found your flowers very colorful, more colorful than they've ever been before! \s[5]At first I thought they were really, really happy,\w8\s[8] but it turned out to just be paint... that Bluebell stole from the Easter Bunny..."
+	"\1\s[13]Sorry for not talking much... I'm just shy, even around other fairies, but especially around humans... Don't mind me."
+	"\0\s[0]I've always wondered what humans do in their dwellings. But I've never really dared to check. Although I can see through the window,\s[5] and see you creating the most marvelous dresses! Maybe you could make fairy-sized ones."
+	"\0\s[6]The roses need to have just the right amount of thorns... Not too much, or they get mad... Not too little, or the birds eat them up."
+	"\0\s[5]Your dress is just wonderful, with the pastel green, and the gold accents, and the pretty carnation in your hair adds a nice touch!"
+	"\0\s[0]Violet, what did you paint yesterday?\1\s[10]I painted... a pretty peacock! I love peafowl so much. They are my favorite birds! They are loud, but even their call sounds nice to me. They have a long, colorful train with the most intricate patterns in their feathers! \s[15]...Am I rambling too much? I'll stop... \0\s[5]\n\n[half]No need to stop! It's okay to talk so much about peafowl. They're great!"
+	"\0\s[5]My favorite color is orange! \s[0]I take special care of the orange flowers. You'd think Violet's favorite color would be violet,\s[2] but it's actually light blue! \s[0]"
+	"\1\s[17]Sometimes when you're in a hurry, you run by us so fast, I get dizzy, and almost lose my way around the garden! \s[13]Sorry... I'd just like you to be more careful about us now that you know we exist."
+	"\1\s[15]Janet, I'm in awe of how well you won the Art Contest this year! \s[4]I love painting, but your painted tigerlily was so good, I can't even begin to measure up to it... \0\s[2]\n\n[half]Violet, what are you saying? \s[0]Your art is stunning! Mine was pretty good at best. \1\s[10]\n\n[half]Yours has lots of emotion, while mine... \0\s[0]I\n\n[half]s entrancing. \1\s[10]\n\n[half]...Yes, I suppose it is! Thanks."
+	"\0\s[0]Banana and apple flowers are so pretty! \1\s[10]And the fruits are delicious!"
+	"\0\s[0]I know there's a lovely pond in your garden but, we've never strayed far from the garden, so we've never seen any ocean creatures. I've only seen them in the movies you watch! They're fascinating. I've even heard rumors of underwater fairies... \s[2]Wow."
+	"\0\s[0]Bluebell's a great friend, but very silly! He loves to chirp and tweet like a bird randomly. He jumps like a grasshopper sometimes, and is very sneaky. He's adored by all of us fairies, though."
+	"\0\s[0]Autumn is my favorite season! I love the color orange, so a season with lots of it is naturally going to be my favorite."
+	"\0\s[0]Tigerlily once spent the whole day reading a %(genre) book and not doing anything else! They barely ate anything the whole time they were reading. Then they gobbled down a bunch of grapes like they were nothing! Tigerlily loved the book that much."
+	"\0\s[0]Tigerlily recommended a book about ocean creatures a while back. It seems very interesting! \s[4]But I don't have time to read it, sadly... \s[0]I'm very busy with the flowers!"
+	"\0\s[3]Primrose had a silly accident involving a human at one point\w8\s[0] but she flew so quickly past the human, that luckily nobody believed them."
+	"\0\s[3]Please, don't tell anyone else about us! I'm worried we'll be captured, and studied, and dissected or something like that..."
+	"\1\s[10]I dunno what to do about Bluebell, \s[17]sometimes his pranks get on my nerves! \s[10]But other times the pranks are actually accidentally helpful!\0\s[0]Yes, like the time our pond became dirty, but he put a strange lotus in it that cleaned it all up! He's a lovely guy."
+	"\1\s[10]What flower has the loudest roar?\0\s[0]Haha, flowers don't roar!\1\s[10]\n\n[half]The dandelion! Hehe...\0\s[0]\n\n[half]Haha, I get it! Dandelions are nice."
+}

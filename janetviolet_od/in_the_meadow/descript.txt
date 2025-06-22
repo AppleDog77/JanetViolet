@@ -1,0 +1,103 @@
+charset,UTF-8
+type,balloon
+use_self_alpha,1
+use_input_alpha,1
+//overlay_outside_balloon,1
+
+
+//——— Basic information ———
+name,In the Meadow
+craftman,Zichqec
+craftmanw,Zichqec
+craftmanurl,https://ukagaka.zichqec.com/
+homeurl,https://raw.githubusercontent.com/Zichqec/s-the-skeleton/master/updates/balloons/in_the_meadow/
+
+
+//——— Display area ———
+origin.x,0
+origin.y,0
+
+validrect.left,33
+validrect.top,33
+validrect.right,-33
+validrect.bottom,-18
+
+wordwrappoint.x,-40
+
+
+//——— Font ———
+font.name,Verdana
+font.height,14
+
+font.color.r,070
+font.color.g,115
+font.color.b,094
+
+font.shadowcolor.r,175
+font.shadowcolor.g,199
+font.shadowcolor.b,131
+
+anchor.font.color.r,158
+anchor.font.color.g,104
+anchor.font.color.b,000
+
+cursor.font.color.r,176
+cursor.font.color.g,118
+cursor.font.color.b,007
+
+cursor.style,underline
+
+disable.font.color.r,148
+disable.font.color.g,163
+disable.font.color.b,119
+
+
+//——— Arrows ———
+arrow0.x,-38
+arrow0.y,35
+
+arrow1.x,-38
+arrow1.y,-29
+
+
+//——— Online marker ———
+onlinemarker.x,123
+onlinemarker.y,-14
+
+//onlinemarker.interval,175
+
+
+//——— SSTP ———
+sstpmarker.x,26
+sstpmarker.y,-13
+
+sstpmessage.font.name,Verdana
+sstpmessage.font.height,10
+
+sstpmessage.x,35
+sstpmessage.xr,-20
+sstpmessage.y,-16
+
+sstpmessage.font.color.r,068
+sstpmessage.font.color.g,099
+sstpmessage.font.color.b,017
+
+
+//——— Number ———
+number.font.name,Verdana
+number.font.height,11
+
+number.xr,-20
+number.y,16
+
+number.font.color.r,068
+number.font.color.g,099
+number.font.color.b,017
+
+
+//——— Input box ———
+communicatebox.x,30
+communicatebox.y,37
+
+communicatebox.width,330
+communicatebox.height,22

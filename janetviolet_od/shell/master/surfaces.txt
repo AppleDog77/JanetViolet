@@ -1,0 +1,537 @@
+
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface151.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,152,0,0,0
+	animation2.pattern1,overlay,152,100,0,0
+	animation2.pattern2,overlay,153,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	animation2.pattern5,overlay,152,100,0,0
+	
+}
+surface1
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface155.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,156,0,0,0
+	animation2.pattern1,overlay,156,100,0,0
+	animation2.pattern2,overlay,158,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,158,300,0,0
+	animation2.pattern5,overlay,156,100,0,0
+	
+}
+surface2
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface159.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,160,0,0,0
+	animation2.pattern1,overlay,160,100,0,0
+	animation2.pattern2,overlay,153,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	animation2.pattern5,overlay,160,100,0,0
+	
+}
+surface3
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface161.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,157,0,0,0
+	animation2.pattern1,overlay,157,100,0,0
+	animation2.pattern2,overlay,158,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,158,300,0,0
+	animation2.pattern5,overlay,157,100,0,0
+	
+}
+surface4
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface162.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,153,0,0,0
+	animation2.pattern1,overlay,153,100,0,0
+	animation2.pattern2,overlay,154,1500-4000,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	
+}
+surface5
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface163.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,152,0,0,0
+	animation2.pattern1,overlay,152,100,0,0
+	animation2.pattern2,overlay,153,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	animation2.pattern5,overlay,152,100,0,0
+	
+}
+surface6
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface164.png,0,0
+	element3,overlay,surface154.png,0,0
+	
+}
+surface7
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface165.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,152,0,0,0
+	animation2.pattern1,overlay,152,100,0,0
+	animation2.pattern2,overlay,153,1500-4000,0,0
+	animation2.pattern3,overlay,154,200,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	animation2.pattern5,overlay,152,100,0,0
+	
+}
+surface8
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface170.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,153,0,0,0
+	animation2.pattern1,overlay,153,100,0,0
+	animation2.pattern2,overlay,154,1500-4000,0,0
+	animation2.pattern4,overlay,153,300,0,0
+	
+}
+surface9
+{
+	//face stuff here
+	element0,overlay,surface0.png,0,0
+	element1,overlay,surface166.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,158,0,0,0
+	animation2.pattern1,overlay,158,100,0,0
+	animation2.pattern2,overlay,154,1500-4000,0,0
+	animation2.pattern4,overlay,158,300,0,0
+	
+}
+
+
+//—————————————————————————————— Kero surfaces ——————————————————————————————
+
+surface10
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface551.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,552,0,0,0
+	animation2.pattern1,overlay,552,100,0,0
+	animation2.pattern2,overlay,553,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	animation2.pattern5,overlay,552,100,0,0
+	
+}
+surface11
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface555.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,556,0,0,0
+	animation2.pattern1,overlay,556,100,0,0
+	animation2.pattern2,overlay,558,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,558,300,0,0
+	animation2.pattern5,overlay,556,100,0,0
+	
+}
+surface12
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface559.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,560,0,0,0
+	animation2.pattern1,overlay,560,100,0,0
+	animation2.pattern2,overlay,553,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	animation2.pattern5,overlay,560,100,0,0
+	
+}
+surface13
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface561.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,557,0,0,0
+	animation2.pattern1,overlay,557,100,0,0
+	animation2.pattern2,overlay,558,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,558,300,0,0
+	animation2.pattern5,overlay,557,100,0,0
+	
+}
+surface14
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface562.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,553,0,0,0
+	animation2.pattern1,overlay,553,100,0,0
+	animation2.pattern2,overlay,554,1500-4000,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	
+}
+surface15
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface563.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,552,0,0,0
+	animation2.pattern1,overlay,552,100,0,0
+	animation2.pattern2,overlay,553,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	animation2.pattern5,overlay,552,100,0,0
+	
+}
+surface16
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface564.png,0,0
+	element3,overlay,surface554.png,0,0
+	
+}
+surface17
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface565.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,552,0,0,0
+	animation2.pattern1,overlay,552,100,0,0
+	animation2.pattern2,overlay,553,1500-4000,0,0
+	animation2.pattern3,overlay,554,200,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	animation2.pattern5,overlay,552,100,0,0
+	
+}
+surface18
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface570.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,553,0,0,0
+	animation2.pattern1,overlay,553,100,0,0
+	animation2.pattern2,overlay,554,1500-4000,0,0
+	animation2.pattern4,overlay,553,300,0,0
+	
+}
+surface19
+{
+	//face stuff here
+	element0,overlay,surface10.png,0,0
+	element1,overlay,surface566.png,0,0
+	
+	//Eyes
+	animation2.interval,always
+	animation2.pattern0,overlay,558,0,0,0
+	animation2.pattern1,overlay,558,100,0,0
+	animation2.pattern2,overlay,554,1500-4000,0,0
+	animation2.pattern4,overlay,558,300,0,0
+	
+}
+
+surface.append,10-19
+{	
+
+	//Talk
+	animation3.interval,talk,4
+	animation3.pattern0,alternativestart,(4,5,6)
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,567,0,0,0
+	animation4.pattern1,overlay,568,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+	
+	animation5.interval,never
+	animation5.pattern0,overlay,569,0,0,0
+	animation5.pattern1,overlay,-1,100,0,0
+	
+	animation6.interval,never
+	animation6.pattern0,overlay,567,0,0,0
+	animation6.pattern1,overlay,-1,100,0,0
+	
+	
+	//Arm???
+	animation259.interval,runonce
+    animation259.pattern0,overlay,503,0,0,0
+	//Shoes1
+	animation230.interval,bind
+    animation230.pattern0,overlay,521,0,0,0
+	//Shoes2
+	animation231.interval,bind
+    animation231.pattern0,overlay,522,0,0,0
+	//Shoes3
+	animation232.interval,bind
+    animation232.pattern0,overlay,523,0,0,0
+	//Shoes4
+	animation233.interval,bind
+    animation233.pattern0,overlay,524,0,0,0
+	
+	//Dress1
+	animation240.interval,bind
+    animation240.pattern0,overlay,525,0,0,0
+	
+	animation260.interval,bind
+    animation260.pattern0,overlay,529,0,0,0
+	//Dress2
+    animation242.interval,bind
+    animation242.pattern0,overlay,526,0,0,0
+	
+    animation243.interval,bind
+    animation243.pattern0,overlay,520,0,0,0
+    animation243.option,background
+	
+    animation262.interval,bind
+    animation262.pattern0,overlay,530,0,0,0
+	//Dress3
+	animation244.interval,bind
+    animation244.pattern0,overlay,527,0,0,0
+	//Dress4
+	animation245.interval,bind
+    animation245.pattern0,overlay,528,0,0,0
+	
+	animation265.interval,bind
+    animation265.pattern0,overlay,531,0,0,0
+	
+	//Hair1
+    animation250.interval,bind
+    animation250.pattern0,overlay,515,0,0,0
+	
+    animation251.interval,bind
+    animation251.pattern0,overlay,511,0,0,0
+    animation251.option,background
+	//Hair2
+    animation252.interval,bind
+    animation252.pattern0,overlay,516,0,0,0
+	
+    animation253.interval,bind
+    animation253.pattern0,overlay,512,0,0,0
+    animation253.option,background
+	//Hair3
+    animation254.interval,bind
+    animation254.pattern0,overlay,517,0,0,0
+	
+    animation255.interval,bind
+    animation255.pattern0,overlay,513,0,0,0
+    animation255.option,background
+	//Hair4
+    animation256.interval,bind
+    animation256.pattern0,overlay,518,0,0,0
+	
+    animation257.interval,bind
+    animation257.pattern0,overlay,514,0,0,0
+    animation257.option,background
+	
+	//Wings
+	animation200.interval,always
+	animation200.pattern0,overlay,500,0,0,0
+	animation200.pattern1,overlay,500,100,0,0
+	animation200.pattern2,overlay,501,200-2000,0,0
+	animation200.pattern3,overlay,502,100,0,0
+	animation200.pattern4,overlay,501,300,0,0
+	animation200.pattern5,overlay,500,200,0,0
+    animation200.option,background
+	
+	collision0,247,101,341,148,head
+}
+
+surface.append,0-9
+{
+	//Talk
+	animation3.interval,talk,4
+	animation3.pattern0,alternativestart,(4,5,6)
+	
+	animation4.interval,never
+	animation4.pattern0,overlay,167,0,0,0
+	animation4.pattern1,overlay,168,100,0,0
+	animation4.pattern2,overlay,-1,100,0,0
+	
+	animation5.interval,never
+	animation5.pattern0,overlay,169,0,0,0
+	animation5.pattern1,overlay,-1,100,0,0
+	
+	animation6.interval,never
+	animation6.pattern0,overlay,167,0,0,0
+	animation6.pattern1,overlay,-1,100,0,0
+	
+	//Shoes1
+	animation100.interval,bind
+    animation100.pattern0,overlay,122,0,0,0
+	//Shoes2
+	animation101.interval,bind
+    animation101.pattern0,overlay,123,0,0,0
+	//Shoes3
+	animation102.interval,bind
+    animation102.pattern0,overlay,124,0,0,0
+	//Shoes4
+	animation103.interval,bind
+    animation103.pattern0,overlay,125,0,0,0
+	
+    animation104.interval,bind
+    animation104.pattern0,overlay,112,0,0,0
+    animation104.option,background
+	
+	//Dress1
+	animation105.interval,bind
+    animation105.pattern0,overlay,126,0,0,0
+	//Dress2
+    animation106.interval,bind
+    animation106.pattern0,overlay,127,0,0,0
+	//Dress3
+	animation107.interval,bind
+    animation107.pattern0,overlay,128,0,0,0
+	//Dress4
+	animation108.interval,bind
+    animation108.pattern0,overlay,129,0,0,0
+	
+	animation109.interval,bind
+    animation109.pattern0,overlay,113,0,0,0
+    animation109.option,background
+	
+	//Hair1
+    animation110.interval,bind
+    animation110.pattern0,overlay,114,0,0,0
+	
+    animation111.interval,bind
+    animation111.pattern0,overlay,118,0,0,0
+    animation111.option,background
+	//Hair2
+    animation112.interval,bind
+    animation112.pattern0,overlay,115,0,0,0
+	
+    animation113.interval,bind
+    animation113.pattern0,overlay,119,0,0,0
+    animation113.option,background
+	//Hair3
+    animation114.interval,bind
+    animation114.pattern0,overlay,116,0,0,0
+	
+    animation115.interval,bind
+    animation115.pattern0,overlay,120,0,0,0
+    animation115.option,background
+	//Hair4
+    animation116.interval,bind
+    animation116.pattern0,overlay,117,0,0,0
+	
+    animation117.interval,bind
+    animation117.pattern0,overlay,121,0,0,0
+    animation117.option,background
+	
+	//Wings
+	animation200.interval,always
+	animation200.pattern0,overlay,100,0,0,0
+	animation200.pattern1,overlay,100,100,0,0
+	animation200.pattern1,overlay,100,1000-4000,0,0
+	animation200.pattern1,overlay,101,100,0,0
+	animation200.pattern1,overlay,102,100,0,0
+	animation200.pattern1,overlay,103,100,0,0
+	animation200.pattern1,overlay,104,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,108,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,104,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,108,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,104,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,108,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,104,100,0,0
+	animation200.pattern1,overlay,105,100,0,0
+	animation200.pattern1,overlay,106,100,0,0
+	animation200.pattern1,overlay,107,100,0,0
+	animation200.pattern1,overlay,108,100,0,0
+	animation200.pattern1,overlay,109,100,0,0
+	animation200.pattern1,overlay,110,100,0,0
+	animation200.pattern1,overlay,111,100,0,0
+	animation200.pattern1,overlay,100,100,0,0
+    animation200.option,background
+
+    collision0,351,106,426,144,head
+}

@@ -1,0 +1,18 @@
+charset,UTF-8
+
+name,Janet and Violet
+type,ghost
+
+shiori,yaya.dll
+
+craftman,odie
+craftmanw,Odie
+craftmanurl,https://ladybug-lane.neocities.org/
+
+sakura.name,Janet
+kero.name,Violet
+
+//Zi: descript.txt uses the name of the balloon, while install.txt needs the directory
+
+balloon,In the Meadow
+sstp.allowunspecifiedsend,0

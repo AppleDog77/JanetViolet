@@ -1,0 +1,7 @@
+charset,UTF-8
+type,ghost
+
+name,Janet and Violet
+directory,janetviolet_od
+
+balloon.directory,in_the_meadow

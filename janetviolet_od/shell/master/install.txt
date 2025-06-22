@@ -1,0 +1,4 @@
+charset,UTF-8
+type,shell
+name,Annette & Bobette
+directory,annette_bobette

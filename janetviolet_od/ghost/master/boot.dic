@@ -1,0 +1,55 @@
+OnFirstBoot
+{
+	//If you add variables, make sure to initialize them here!
+	//Note - I haven't added anything about username or pronouns here because it's all handled by the SSP prefs
+	stroke = 0
+	LastTalk = ""
+	
+	"\0\s[0]\1\s[12]AAA! It's a human! Hide! \1\s[-1]\0\s[3]Woah... \w9\w8\1\s[13]\n\n[half]Janet, why aren't you hiding?! Fly away! Now!\w8\0\s[0]\n\n[half]I don't think the human wants to harm us... They're wearing nice fairy-themed clothing and just looking at us... Can they understand us? Hi there! I'm- \1\s[13]\n\n[half]We have to go now! Just because they're wearing nice clothing doesn't mean they don't want to capture us, and study us or something! Bye, human! \1\s[-1]\0\s[0]\n\n[half]Hi, I'm Violet! And you are...? %(username)...? Hi, %(username)! Nice to meet you! We love taking care of the flowers in your garden; they're so pretty! \s[5]There's dahlias and daisies and roses and- \s[0] \1\s[13]\n\n[half]Why aren't you leaving the human alone? What if they- \0\s[0]\n\n[half]Violet, don't worry! The human is nice and won't harm us! %(Capitalize(they)) even told me %(their) name, %(username)! \1\s[18]\n\n[half]Really? Okay then... Well, hi. I suppose as long as you don't capture us and study us under a microscope, I won't be too suspicious of you... \s[10]We fairies love taking care of flowers, when the owners of their gardens aren't around, making sure they get enough sunlight, water, and nutrition to thrive! So I hope we'll be welcome here... \0\s[0]\n\n[half]Of course we're welcome! %(username) can't always stay in %(their) garden to take care of %(their) beautiful flowers, after all. Hope we make great company for you in your garden!"
+}
+
+OnInitialize
+{
+	//If you want some variables to reset on boot, put them here. This event will happen even if you add other events like OnGhostChanged
+	//OnInitialize is a NOTIFY event! That means it cannot return scripts. This event is only meant for things like variable changes. See this page on Ukadoc for more info: https://ukagakadreamteam.github.io/ukadoc/manual/spec_shiori3.html
+	
+	//If you add new variables in updates, I recommend initializing them like so:
+	//if !ISVAR("NewVariable"); NewVariable = 0
+	//This means that it will only set the new variable if the user doesn't already have it, so that their variables don't get overwritten
+	
+	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
+	{
+		LastTalk = ""
+	}
+}
+
+OnBoot
+{
+	_temp = SHIORI3FW.UserBirthday
+	_user_birthday = "%(_temp[1])/%(_temp[2])" //M/D, if you want it D/M you can switch it around
+	_today = "%(month)/%(day)" //Again, switch this around if using D/M
+	
+	"\1\s[10]\0\s[0]"
+	--
+	if _today == _user_birthday
+	{
+		"\1\s[10]It is %(username)'s birthday today.\w8\0\s[0]Happy birthday, %(username). Spending time with your plants is a great way to spend the day."
+	}
+	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
+	{
+		"\0\s[0]It's new year's day.\w8 Happy %(year),\w4 %(username). Hope you plant new flowers this year!"
+	}
+	else //Normal boot
+	{
+		"\0\s[0]Hello, %(username).\w8 Good to see you out here this fine day."
+		"\1\s[10]Hi.\0\s[0]Hello, %(username).\w8"
+	}
+}
+
+OnClose
+{
+	"\0\s[0]Farewell."
+	"\0\s[2]Bye bye!\1\s[12]Bye..."
+	--
+	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
+}
