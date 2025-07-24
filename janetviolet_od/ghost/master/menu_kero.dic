@@ -10,6 +10,202 @@ OnKeroMenu : all
 	"\1\s[10]\b[2]\![set,autoscroll,disable]"
 	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; KeroMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
 	"\n\n\_q"
-	
+	"\![*]\q[Play Higher or Lower,holgame]\n\n"
 	"\![*]\q[Cancel,blank]"
+}
+
+Select.holgame{
+
+    //initialize deck of cards
+    //single card: disp value, actual value for hol, suit icon, color
+    deck = ("A,50,♠,gray","2,2,♠,gray","3,3,♠,gray","4,4,♠,gray","5,5,♠,gray", "6,6,♠,gray","7,7,♠,gray", "8,8,♠,gray","9,9,♠,gray","10,10,♠,gray","J,11,♠,gray", "Q,12,♠,gray","K,13,♠,gray",/
+   		 "A,50,♥,red","2,2,♥,red","3,3,♥,red","4,4,♥,red","5,5,♥,red", "6,6,♥,red","7,7,♥,red", "8,8,♥,red","9,9,♥,red","10,10,♥,red","J,11,♥,red","Q,12,♥,red","K,13,♥,red",/
+   		 "A,50,♣,gray","2,2,♣,gray","3,3,♣,gray","4,4,♣,gray", "5,5,♣,gray", "6,6,♣,gray", "7,7,♣,gray","8,8,♣,gray","9,9,♣,gray", "10,10,♣,gray","J,11,♣,gray","Q,12,♣,gray","K,13,♣,gray",/
+   		 "A,50,♦,red","2,2,♦,red","3,3,♦,red","4,4,♦,red","5,5,♦,red", "6,6,♦,red", "7,7,♦,red","8,8,♦,red","9,9,♦,red","10,10,♦,red", "J,11,♦,red","Q,12,♦,red","K,13,♦,red",);
+
+    card = ""
+    HOLGuesses = 0 //correct guesses
+    OnPlayHOL
+
+}
+
+OnPlayHOL {
+
+    if reference0 == "rules" {
+   	 "\1\s[10]OK, I'll tell you the rules for this game...\w8 I'll show you a card, and you guess if the next card in the deck is higher or lower. Aces are the highest, and 2's are the lowest. Now, let's play!\w8\x"
+    } else {
+   	 //pick a random card, keep old card for comparison
+   	 oldcard = card
+   	 _rand = RAND(ARRAYSIZE(deck)-1)
+   	 card = deck[_rand]
+   	 //remove card from deck
+   	 deck[_rand] = IARRAY
+    }
+    --
+    if ARRAYSIZE(deck) == 0 {//if user gets through the whole deck
+   	 HOLComplete
+    }
+
+    if reference0 == "higher" {
+
+   	 //new card lower than old card
+   	 if TOINT(oldcard[1]) > TOINT(card[1])  {
+
+   		 "\1\s[14]Alas, \n\w4%(newcarddisp) is lower than %(oldcarddisp).\w8 Looks like you lose...\w8\s[10] At least you had a streak of %(HOLGuesses) correct guesses.\n\n"
+
+   		 --
+   		 "\_q\![*]\q[Play again?,holgame] or...\n\n[half]"
+   		 --
+		"\![*]\q[Go back to menu,OnKeroMenu]\e"
+
+
+
+   	 } elseif TOINT(oldcard[1]) < TOINT(card[1]) { //new card higher than old card
+
+   		 //increase winnings
+   		 HOLGuesses++
+
+   		 "\1\s[10]Yep!\w8 %(newcarddisp) is higher than %(oldcarddisp) !\w8\x"
+
+   		 --
+
+   		 "\1\s[10]Top Card: %(newcarddisp)\n\n"
+
+   		 --
+
+   		 "\_qDo you think the next card is:\n/
+         \![*]\q[Higher?,OnPlayHOL,higher]\n/
+         \![*]\q[Lower?,OnPlayHOL,lower]\n\n[half]"
+
+   		 --
+
+   		 "\![*]\q[View rules,OnPlayHOL,rules]\n/
+         \![*]\q[Stop playing,HOLOver]\e"
+
+   	 } else { //same value
+
+   		 "\1\s[12]Hmm...\w8%(newcarddisp) has the same value as %(oldcarddisp).\w8\s[10] Let's try again...\x"
+
+   		 --
+
+   		 "\1\s[10]Top Card: %(newcarddisp)\n\n"
+
+   		 --
+
+   		 "\_qDo you think the next card is:\n/
+         \![*]\q[Higher?,OnPlayHOL,higher]\n/
+         \![*]\q[Lower?,OnPlayHOL,lower]\n\n[half]"
+
+   		 --
+
+   		 "\![*]\q[View rules,OnPlayHOL,rules]\n/
+         \![*]\q[Stop playing,HOLOver]\e"
+
+   	 }
+
+    } elseif reference0 == "lower" {
+
+   		 //new card higher than old card
+   	 if TOINT(oldcard[1]) < TOINT(card[1])  {
+
+   		 "\1\s[14]Alas, \n\w4%(newcarddisp) is higher than %(oldcarddisp).\w8 Looks like you lose...\w8\s[10] At least you had a streak of %(HOLGuesses) correct guesses.\n\n"
+
+   		 --
+   		 "\_q\![*]\q[Play again?,holgame] or...\n\n[half]"
+		--
+		"\![*]\q[Go back to menu,OnKeroMenu]\e"
+
+
+
+   	 } elseif TOINT(oldcard[1]) > TOINT(card[1]) { //new card lower than old card
+
+   		 //increase winnings
+   		 HOLGuesses++
+
+   		 "\1\s[10]Yep!\w8 %(newcarddisp) is lower than %(oldcarddisp) !\w8\x"
+
+   		 --
+
+   		 "\1\s[10]Top Card: %(newcarddisp)\n\n"
+
+   		 --
+
+   		 "\_qDo you think the next card is:\n/
+   		 \![*]\q[Higher?,OnPlayHOL,higher]\n/
+   		 \![*]\q[Lower?,OnPlayHOL,lower]\n\n[half]"
+
+   		 --
+
+   		 "\![*]\q[View rules,OnPlayHOL,rules]\n/
+   		 \![*]\q[Stop playing,HOLOver]\e"
+
+   	 } else { //same value
+
+   		 "\1\s[12]Hmm...\w8%(newcarddisp) has the same value as %(oldcarddisp).\w8 Let's try again...\x"
+
+   		 --
+
+   		 "\1\s[10]Top Card: %(newcarddisp)\n\n"
+
+   		 --
+
+   		 "\_qDo you think the next card is:\n/
+   		 \![*]\q[Higher?,OnPlayHOL,higher]\n/
+   		 \![*]\q[Lower?,OnPlayHOL,lower]\n\n[half]"
+
+   		 --
+
+   		 "\![*]\q[View rules,OnPlayHOL,rules]\n/
+   		 \![*]\q[Stop playing,HOLOver]\e"
+
+   	 }
+
+
+    } else {
+
+   	 "\1\s[10]Top Card: %(newcarddisp)\n\n"
+
+   	 --
+
+   	 "\_qDo you think the next card is:\n/
+   	 \![*]\q[Higher?,OnPlayHOL,higher]\n/
+   	 \![*]\q[Lower?,OnPlayHOL,lower]\n\n[half]/
+   	 \![*]\q[View rules,OnPlayHOL,rules]\e"
+
+    }
+
+
+}
+
+Select.HOLOver {
+
+    "\1\s[15]You had a streak of %(HOLGuesses) correct guesses!\w8\s[10] Yay!\w5 Want to play again?\n\n"
+
+    --
+    "\![*]\q[Play again,holgame]\n\n[half]"
+    --
+    "\![*]\q[Back to menu,OnKeroMenu]\e"
+
+}
+
+HOLComplete {
+
+    "\1\s[12]*gasp* Wow!\w9 Amazing! You got through the whole deck!\w8\s[15] You're super lucky...\w8\s[10] I hope this game isn't any less fun now that you won it once...\w8\n\n"
+    --
+    "\_q\![*]\q[Play again?,holgame] or...\n\n[half]"
+    --
+    "\![*]\q[Go back to menu,OnKeroMenu]\e"
+
+}
+
+oldcarddisp {
+
+    "\f[color,%(oldcard[3])]%(oldcard[2])%(oldcard[0])\f[color,default]"
+
+}
+
+newcarddisp {
+
+    "\f[color,%(card[3])]%(card[2])%(card[0])\f[color,default]"
+
 }

@@ -37,8 +37,9 @@ OnMouseMove.Sakura
 		"\0\s[5]Thanks!"
 		"\0\s[0]We love our jobs, but we also love being appreciated for them, so thank you!"
 		"\0\s[5]..."
-		"\0\s[0]You're very welcome."
 		"\0\s[0]Very nice..."
+		"\0\s[0]You're very welcome."
+		"\0\s[0]You're very nice..."
 	}
 }
 
@@ -49,6 +50,8 @@ OnMouseMove.Kero
 		"\1\s[15]..."
 		"\1\s[15]Thanks..."
 		"\1\s[15]Ahh..."
+		"\1\s[10]Thank you."
+		"\1\s[15]Very good..."
 	}
 }
 
